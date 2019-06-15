@@ -15,7 +15,7 @@ after_success:
   - docker build -t vectorkat/multi-worker ./worker
   
   # Login into docker CLI
-  - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_ID" --password-stdin
+  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_ID" --password-stdin
 
   # Take images and push to DockerHub
   - docker push vectorkat/multi-client
