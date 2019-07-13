@@ -28,11 +28,11 @@
             "portMappings": [
                 {
                     "containerPort": 80,
-                    "protocol": "tcp"
+                    "hostPort": 80,
                 }
             ],
             "links": ["client", "server"],
-            "memory":128
+            "memory": 128
         }
     ]
 }
