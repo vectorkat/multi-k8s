@@ -23,7 +23,7 @@
         },
         {
             "name": "nginx",
-            "image": "vectorkat/nginx",
+            "image": "vectorkat/multi-nginx",
             "essential": true,
             "portMappings": [
                 {
