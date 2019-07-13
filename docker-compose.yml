@@ -43,3 +43,7 @@ services:
     environment: 
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+
+        # Login into docker CLI
+          # Login into docker CLI
+            # Login into docker CLI
