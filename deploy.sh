@@ -1,6 +1,6 @@
 docker build -t vectorkat/multi-client:latest -t vectorkat/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -f vectorkat/multi-server:latest -t vectorkat/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -f vectorkat/multi-worker:latest -t vectorkat/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t vectorkat/multi-server:latest -t vectorkat/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t vectorkat/multi-worker:latest -t vectorkat/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push vectorkat/multi-client:latest
 docker push vectorkat/multi-server:latest
