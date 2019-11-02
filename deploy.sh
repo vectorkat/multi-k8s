@@ -13,5 +13,5 @@ docker push vectorkat/multi-worker:$SHA
 kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=vectorkat/multi-server:$SHA
-kubectl set image deployments/client-deployment server=vectorkat/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=vectorkat/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=vectorkat/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=vectorkat/multi-worker:$SHA
