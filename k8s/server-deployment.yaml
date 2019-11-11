@@ -23,7 +23,7 @@ spec:
           - name: REDIS_PORT
             value: '6379'
           - name: PGUSER
-            value: postres
+            value: postgres
           - name: PGHOST
             value: postgres-cluster-ip-service
           - name: PGPORT
